@@ -1,17 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'standalone',
-  reactStrictMode: true,
+import type { NextConfig } from 'next';
+
+const nextConfig: NextConfig = {
+  output: 'export', // Enables static export
+  basePath: '/your-repo-name', // Replace with your GitHub repository name
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
-        port: '',
-        pathname: '/**',
-      },
-    ],
+    unoptimized: true, // Disable Next.js image optimization for GitHub Pages
   },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
