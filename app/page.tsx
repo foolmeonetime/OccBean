@@ -6,12 +6,8 @@ import { Button } from "@/components/ui/button"
 
 export default function Home() {
   const [glitchActive, setGlitchActive] = useState(false)
-  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    // Ensure client-side rendering
-    setIsClient(true)
-
     const interval = setInterval(() => {
       setGlitchActive(true)
       setTimeout(() => setGlitchActive(false), 1200)
@@ -19,8 +15,6 @@ export default function Home() {
 
     return () => clearInterval(interval)
   }, [])
-
-  if (!isClient) return null; // Prevent rendering until client is ready
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-black">
@@ -56,10 +50,10 @@ export default function Home() {
 
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 text-white">
         <h1 className={`text-6xl font-bold mb-6 ${glitchActive ? 'animate-glitch-text' : ''}`}>
-          Home of the Beans
+          Bean🫘
         </h1>
         <p className="max-w-md text-xl text-center mb-8">
-          Enter a world of digital chaos and imagination
+          something is happening but not yet..⬇️
         </p>
         <Button 
           className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg
