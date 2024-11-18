@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
     {
       "src": "package.json",
@@ -12,7 +11,5 @@
       "src": "/(.*)",
       "dest": "/$1"
     }
-  ],
-  "outputDirectory": "out",
-  "ignoreBuildErrors": true
+  ]
 }
