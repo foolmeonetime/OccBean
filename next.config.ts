@@ -3,7 +3,7 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   output: 'export', // Enables static export
-  basePath: '/Occbean', // Replace with your GitHub repository name
+  basePath: '/OccBean', // Ensure this matches your GitHub repository name exactly (case-sensitive)
   images: {
     unoptimized: true, // Disable Next.js image optimization for GitHub Pages
   },
