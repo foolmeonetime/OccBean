@@ -50,7 +50,7 @@ export default function Home() {
 
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 text-white">
         <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ${glitchActive ? 'animate-glitch-text' : ''}`}>
-          Gahdammit Bobby!🫘
+          Gahdammit Bobby!
         </h1>
         <p className="max-w-md text-xl text-center mb-8">
           ...He's waiting ⬇️
