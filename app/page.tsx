@@ -53,7 +53,7 @@ export default function Home() {
           Gahdammit Bobby!
         </h1>
         <p className="max-w-md text-xl text-center mb-8">
-          ...He's waiting ⬇️
+           Fill your bean bag
         </p>
         <Button 
           className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg
