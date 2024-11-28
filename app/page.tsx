@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 
 export default function Home() {
@@ -30,22 +29,6 @@ export default function Home() {
             }}
           />
         ))}
-      </div>
-
-      <div 
-        className={`fixed bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 hover:translate-y-0 transition-transform duration-500 ease-out cursor-pointer z-20
-          ${glitchActive ? 'animate-glitch glitch-slide-up' : ''}`}
-      >
-        <div className="relative w-32 h-32">
-          <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0463-BgpGz3iGygoEFSOMxD3CBTCtfrVucJ.gif"
-            alt="Peeking character"
-            width={128}
-            height={128}
-            className="object-contain"
-            unoptimized
-          />
-        </div>
       </div>
 
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 text-white">
@@ -113,15 +96,6 @@ export default function Home() {
           }
         }
 
-        @keyframes glitch-slide-up {
-          0%, 100% {
-            transform: translate(-50%, 50%);
-          }
-          10%, 90% {
-            transform: translate(-50%, 0);
-          }
-        }
-
         .animate-glitch {
           animation: glitch 0.2s linear infinite;
         }
@@ -137,10 +111,6 @@ export default function Home() {
           background-color: white;
           border-radius: 50%;
           animation: twinkle 5s infinite;
-        }
-
-        .glitch-slide-up {
-          animation: glitch-slide-up 1.2s ease-in-out;
         }
       `}</style>
     </div>
