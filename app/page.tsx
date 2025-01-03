@@ -6,6 +6,7 @@ import CountdownTimer from '@/components/CountdownTimer'
 
 export default function Home() {
   const [glitchActive, setGlitchActive] = useState(false)
+  const [showSecret, setShowSecret] = useState(false)
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -43,11 +44,23 @@ export default function Home() {
         </p>
         <Button 
           className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg
-            transform hover:scale-105 transition-transform duration-200"
+            transform hover:scale-105 transition-transform duration-200 mb-4"
           onClick={() => setGlitchActive(true)}
         >
           Enter
         </Button>
+        <Button
+          className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg
+            transform hover:scale-105 transition-transform duration-200"
+          onClick={() => setShowSecret(!showSecret)}
+        >
+          Secret Sauce
+        </Button>
+        {showSecret && (
+          <p className="mt-4 text-xl font-bold animate-fade-in-down">
+            6.) two
+          </p>
+        )}
       </main>
     </div>
   )
