@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import CountdownTimer from '@/components/CountdownTimer'
+import { Twitter, Send } from 'lucide-react'
 
 export default function Home() {
   const [glitchActive, setGlitchActive] = useState(false)
@@ -62,6 +63,30 @@ export default function Home() {
           </p>
         )}
       </main>
+
+      <footer className="fixed bottom-0 left-0 right-0 z-20 p-4 bg-black/80 backdrop-blur">
+        <div className="max-w-screen-xl mx-auto flex justify-center items-center gap-6">
+          <a
+            href="https://x.com/thebeantin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-purple-400 transition-colors duration-200"
+            aria-label="Follow us on X (Twitter)"
+          >
+            <Twitter className="w-6 h-6" />
+          </a>
+          <a
+            href="https://t.me/+kkDjztuYCeZiZjYx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-purple-400 transition-colors duration-200"
+            aria-label="Join our Telegram group"
+          >
+            <Send className="w-6 h-6" />
+          </a>
+        </div>
+      </footer>
     </div>
   )
 }
+
