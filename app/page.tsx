@@ -50,7 +50,7 @@ export default function Home() {
         >
           Enter
         </Button>
-        )}
+
       </main>
 
       <footer className="fixed bottom-0 left-0 right-0 z-20 p-4 bg-black/80 backdrop-blur">
