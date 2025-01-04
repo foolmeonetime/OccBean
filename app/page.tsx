@@ -50,17 +50,6 @@ export default function Home() {
         >
           Enter
         </Button>
-        <Button
-          className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg text-lg
-            transform hover:scale-105 transition-transform duration-200"
-          onClick={() => setShowSecret(!showSecret)}
-        >
-          Secret Sauce
-        </Button>
-        {showSecret && (
-          <p className="mt-4 text-xl font-bold animate-fade-in-down">
-            6.) two
-          </p>
         )}
       </main>
 
