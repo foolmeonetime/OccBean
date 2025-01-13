@@ -38,10 +38,9 @@ export default function Home() {
 
       <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 text-white">
         <h1 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ${glitchActive ? 'animate-glitch-text' : ''}`}>
-          Gahdammit Bobby!
+          Fill your bean bag
         </h1>
         <p className="max-w-md text-xl text-center mb-8">
-           Fill your bean bag
         </p>
         <Button 
           className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg text-lg
